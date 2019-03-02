@@ -10,43 +10,35 @@
   </head>
   <body> 
 
+<header>
 <ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
-</ul>
-
-<ul id="dropdown2" class="dropdown-content">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
+  <li><%= link_to "Hardware & Software", services_hardware_path %></li>
+  <li><%= link_to "IT Support Services", services_support_path %></li>
+  <li><%= link_to "Network Services", services_network_path %></li>
+  <li><%= link_to "IP Phone Services", services_IPphone_path %></li>  
+  <li><%= link_to "Cloud Solutions & Services", services_cloud_path %></li>  
+  <li><%= link_to "Cyber Security Services", services_security_path %></li>  
 </ul>
 
 <nav>
 <div class="container">
   <div class="nav-wrapper">
-    <a href="#!" class="brand-logo">Logo</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <a href="/" class="brand-logo">ShorIT</a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
+      <li><%= link_to "Home", root_path %></li>
+      <li><a href="/about">About us</a></li>
       <!-- Dropdown Trigger -->
-      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-trigger" data-target="dropdown1">Services<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
   </div>
 </div>
 </nav>
+</header>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
-  </ul>
-  
-    <%= yield %>
+<main>
+  <%= yield %>
+</main>
+
   </body>
 </html>
