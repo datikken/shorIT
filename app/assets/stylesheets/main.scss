@@ -1,6 +1,24 @@
 // Place all the styles related to the Main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.spinner {
+    background-color: #1942ab;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+}
+
+nav, footer {
+    background-color: #1942ab!important;
+}
+
+.spinner-img {
+    padding-top: 50%;
+}
+
 .navbar-logo {
     width: 50px;
     padding-top: 4px!important;
@@ -12,8 +30,6 @@
     flex-wrap: wrap;
 }
 
-.footer-wrap_logo {
-}
 .footer-logo {
     width: 100px;
 }
