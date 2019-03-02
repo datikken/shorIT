@@ -21,5 +21,6 @@
 $(document).on('turbolinks:load', function(){
     $(".dropdown-trigger").dropdown();
     $('.sidenav').sidenav();
+    $('.materialboxed').materialbox();
     $('.spinner').fadeOut(800);
 })

@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+}
+
+.text1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.text2 {
+    text-align: center;
+}
+
+.services {
+    background-color: white;
+    width: 100vw;
+}
+
+.services h2 {
+    padding-top: 20px;
+}
+
+.services-items-container, .services-items-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.sertificates {
+    background-color: white;
+}
+
+.sertificates h2 {
+    padding-top: 20px;
+}
+
+.sertificates-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.materialboxed {
+    margin: 25px;
+}
