@@ -15,7 +15,7 @@
   <li><%= link_to "Hardware & Software", services_hardware_path %></li>
   <li><%= link_to "IT Support Services", services_support_path %></li>
   <li><%= link_to "Network Services", services_network_path %></li>
-  <li><%= link_to "IP Phone Services", services_IPphone_path %></li>  
+  <li><%= link_to "IP Phone Services", services_IPphone_path %></li>
   <li><%= link_to "Cloud Solutions & Services", services_cloud_path %></li>  
   <li><%= link_to "Cyber Security Services", services_security_path %></li>  
 </ul>
@@ -24,7 +24,7 @@
 <div class="container">
   <div class="nav-wrapper">
     <a href="/" class="brand-logo">
-      <img src="logo.png" class="navbar-logo">
+      <%= image_tag "logo.png", :class => "navbar-logo" %>      
     </a>
     <ul class="right hide-on-med-and-down">
       <li><%= link_to "Home", root_path %></li>
@@ -42,18 +42,17 @@
   <%= yield %>
 </main>
 
-
 <footer class="page-footer">
   <div class="container">
     <div class="row">
       <div class="footer-wrap">
           <div class="footer-wrap_logo">
-            <img src="logo.png" class="footer-logo">
+            <%= image_tag "logo.png", :class => "footer-logo" %>
           </div>
           <div class="footer-wrap_socials">
             <p>Social media</p>
-            <img src="facebook.svg">       
-            <img src="instagram.svg">       
+            <%= image_tag "facebook.svg" %>                        
+            <%= image_tag "instagram.svg" %>
           </div>   
       
           <div class="footer-wrap_logo">
