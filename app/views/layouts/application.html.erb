@@ -23,7 +23,9 @@
 <nav>
 <div class="container">
   <div class="nav-wrapper">
-    <a href="/" class="brand-logo">ShorIT</a>
+    <a href="/" class="brand-logo">
+      <img src="logo.png" class="navbar-logo">
+    </a>
     <ul class="right hide-on-med-and-down">
       <li><%= link_to "Home", root_path %></li>
       <li><a href="/about">About us</a></li>
@@ -39,6 +41,68 @@
 <main>
   <%= yield %>
 </main>
+
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-wrap">
+          <div class="footer-wrap_logo">
+            <img src="logo.png" class="footer-logo">
+          </div>
+          <div class="footer-wrap_socials">
+            <p>Social media</p>
+            <img src="facebook.svg">       
+            <img src="instagram.svg">       
+          </div>   
+      
+          <div class="footer-wrap_logo">
+            <p>Services</p>
+            <ul>
+              <li>
+                Hardware & Software
+              </li>
+              <li>
+                IT Support Services
+              </li>
+              <li>
+                Network Services
+              </li>
+              <li>
+                IP Phone Services
+              </li>
+              <li>
+                Cloud Solutions & Services
+              </li>
+              <li>
+                Cyber Security Services
+              </li>                          
+            </ul>
+          </div>
+          <div class="footer-wrap_socials">
+            <p>Contact</p>
+            <ul>
+              <li>
+                Yo
+              </li>
+              <li>
+                Sup
+              </li>
+              <li>
+                Bruh
+              </li>
+            </ul>        
+          </div>   
+      </div>
+    </div>
+  </div>
+    <div class="footer-copyright">
+      <div class="container">
+            © 2019
+      <a class="grey-text text-lighten-4 right" href="#!">Tikken</a>
+    </div>
+  </div>
+</footer>
 
   </body>
 </html>

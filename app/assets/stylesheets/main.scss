@@ -1,3 +1,23 @@
 // Place all the styles related to the Main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar-logo {
+    width: 50px;
+    padding-top: 4px!important;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-wrap_logo {
+}
+.footer-logo {
+    width: 100px;
+}
+
+.footer-wrap_socials img {
+    width: 42%!important;
+}
